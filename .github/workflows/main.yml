@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
        
     - name: Download and Install Playit
-      run:  |
+      run: |
         Invoke-WebRequest -Uri "https://github.com/playit-cloud/playit-agent/releases/download/ve.15.26/playit-windows-x86-64-signed.exe" -OutFile "$env:USERPROFILE\playit.exe"
         Start-Sleep -Seconds 5  # Give some time for the download to complete 
 
